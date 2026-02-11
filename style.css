@@ -32,7 +32,7 @@ body {
 
 /* Logo Styles */
 .logo-img, .footer-logo {
-    height: 60px;
+    height: 90px;
     width: auto;
     object-fit: contain;
 }
@@ -763,4 +763,24 @@ section {
         font-size: 2rem;
     }
 
+}
+@media (max-width: 768px) {
+
+    /* Center footer logo */
+    .footer-brand {
+        text-align: center;
+    }
+
+    .footer-logo {
+        display: block;
+        margin: 0 auto 20px;
+        height: 70px;   /* bigger on phone */
+    }
+}
+
+@media (max-width: 480px) {
+
+    .footer-logo {
+        height: 80px;   /* even bigger on small phones */
+    }
 }
